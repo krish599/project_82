@@ -25,10 +25,11 @@ function my_mousemove(e){
         ctx.beginPath();
         ctx.strokeStyle = color;
         ctx.lineWidth = width_of_line;
-        ctx.arc (current_position_of_mouse_x,current_position_of_mouse_y, radius , 0 , 2*MathPI);
+        ctx.arc (current_position_of_mouse_x,current_position_of_mouse_y, 
+            radius , 0 , 2*Math.PI);
         ctx.stroke();
     }
-
+    ctx.stroke();
     last_position_x = current_position_of_mouse_x;
     last_position_y = current_position_of_mouse_y;
 }
